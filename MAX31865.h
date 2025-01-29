@@ -1,3 +1,20 @@
+/**
+  ******************************************************************************
+  * @file    MAX31865.h
+  * @brief   MAX31865 RTD-to-Digital Converter Library for STM32
+  ******************************************************************************
+  * @author  Orkun ZA
+  * @date    28.01.2025
+  * @version 1.2
+  ******************************************************************************
+  * @attention
+  *
+  * This library provides functions to interface with the MAX31865 RTD-to-Digital
+  * converter using SPI communication on an STM32 microcontroller.
+  *
+  ******************************************************************************
+  */
+
 #ifndef MAX31865_H
 #define MAX31865_H
 
@@ -48,7 +65,7 @@ typedef struct {
 } MAX31865_t;
 
 /* Function Prototypes */
-void Max31865_Init(MAX31865_t *max);
+void  Max31865_Init(MAX31865_t *max);
 bool  Max31865_ReadTempC(MAX31865_t *max31865, float *readTemp);
 float Max31865_Filter(float new_input, float last_output, float alpha);
 
