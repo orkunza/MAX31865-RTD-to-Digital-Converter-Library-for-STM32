@@ -1,3 +1,21 @@
+/**
+  ******************************************************************************
+  * @file    MAX31865.c
+  * @brief   MAX31865 RTD-to-Digital Converter Driver Implementation
+  ******************************************************************************
+  * @author  Orkun ZA
+  * @date    28.01.2025
+  * @version 1.2
+  ******************************************************************************
+  * @attention
+  *
+  * This file provides the implementation of the MAX31865 driver functions for
+  * STM32 using SPI communication. It supports basic initialization and RTD
+  * temperature readings for PT100 sensors.
+  *
+  ******************************************************************************
+  */
+
 #include "max31865.h"
 
 /* SPI Read Register */
